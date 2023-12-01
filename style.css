@@ -136,11 +136,12 @@
 
 .textTitle{
     position: absolute;
-    width: 300px;
+    width: 300.93px;
     height: 120px;
+    left: 0px;
     top: 0px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-family:'SourceSansPro';
+    font-size: 32px;
     line-height: 38px;
     display: flex;
     align-items: flex-end;
@@ -150,28 +151,23 @@
 
 .textTitle p{
     position: absolute;
-    left: 5px;
-    top: -25px;
+    top: -30px;
 }
 
 .textLines{
     position: absolute;
-    width: 300px;
+    width: 300.93px;
     height: 156px;
-    top: 135px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    left: 0px;
+    top: 140px;
+    font-family: 'SourceSansPro';
+    font-size: 18px;
     line-height: 26px;
     display: flex;
     align-items: center;
     letter-spacing: -0.2px;
     color: #484A4C;   
     opacity: 0.7;
-}
-
-.textLines p{
-    position: absolute;
-    left: 5px;
 }
 
 .arrows{
