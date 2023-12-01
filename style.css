@@ -4,11 +4,13 @@
     height: 730px;
 }
 
-.columns{
+.container{
     position: absolute;
     width: 940px;
     height: 730px;
     left: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header{
