@@ -15,8 +15,8 @@ $(function(){
     bottomTranslationX = 0;
 
     $('.rectangleRightArrow').click(function(){
-        const topLastImage = topImages[4];
-        const bottomLastImage = bottomImages[3];
+        const topLastImage = topImages[topImages.length-1];
+        const bottomLastImage = bottomImages[bottomImages.length-1];
         const topLastImageWidth = topLastImage.offsetWidth + 10;
         const bottomLastImageWidth = bottomLastImage.offsetWidth + 10;
 
