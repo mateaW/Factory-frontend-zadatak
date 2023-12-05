@@ -1,22 +1,31 @@
 $gray_color: #DDDDDD;
 $blue_color: #134880;
 
+$slider_width: 1920px;
+$slider_height: 730px;
+
 $container_width: 940px;
 $footer_header_height: 100px;
+
+$image_height: 200px;
+
+$top_row_container_width: 1040px;
+$bottom_row_container_width: 850px;
+
+$arrow_width_height: 60px;
+$arrowBorderRadius: 5px;
+
+$small_arrow_width: 9.98px;
+$small_arrow_height: 16px;
 
 $textBoxWidth: 301px;
 $textBoxHeight: 296px;
 $text_font: 'SourceSansPro';
 
-$image_height: 200px;
-
-$arrow_width_height: 60px;
-$arrowBorderRadius: 5px;
-
 .slider {
     position: relative;
-    width: 1920px;
-    height: 730px;
+    width: $slider_width;
+    height: $slider_height;
 }
 
 .container {
@@ -44,7 +53,6 @@ $arrowBorderRadius: 5px;
 }
 
 #headerLeftBox{
-    // width: 301px;
     width: 32%;
     left: 0px;
 }
@@ -71,7 +79,7 @@ $arrowBorderRadius: 5px;
 .topRowContainer{
     position: absolute;
     overflow: hidden;
-    width: 1040px;
+    width: $top_row_container_width;
     height: $image_height;
     left: -420px;
     top: 160px;
@@ -80,7 +88,7 @@ $arrowBorderRadius: 5px;
 .bottomRowContainer{
     position: absolute;
     overflow: hidden;
-    width: 850px;
+    width: $bottom_row_container_width;
     height: $image_height;
     left: -390px;
     bottom: 160px;
@@ -189,7 +197,7 @@ $arrowBorderRadius: 5px;
 .arrows {
     position: absolute;
     width: $arrow_width_height;
-    height: 130px;
+    height: $arrow_width_height+$arrow_width_height+10px;
     right: 319.5px;
     bottom: 230px;
 }
@@ -246,8 +254,8 @@ $arrowBorderRadius: 5px;
 
 .combinedShapeLeftArrow, .combinedShapeRightArrow {
     position: absolute;
-    width: 9.98px;
-    height: 16px;
+    width: $small_arrow_width;
+    height: $small_arrow_height;
     left: 25px;
     top: 22px;
     transition: 0.3s ease;
