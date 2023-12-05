@@ -4,8 +4,8 @@ $blue_color: #134880;
 $container_width: 940px;
 $footer_header_height: 100px;
 
-$textBoxWidth: 300.93px;
-$textBoxHeight: 120px;
+$textBoxWidth: 301px;
+$textBoxHeight: 296px;
 $text_font: 'SourceSansPro';
 
 $image_height: 200px;
@@ -22,7 +22,7 @@ $arrowBorderRadius: 5px;
 .container {
     position: absolute;
     width: $container_width;
-    height: 730px;
+    height: 100%;
     left: 250px;
     margin-left: auto;
     margin-right: auto;
@@ -38,18 +38,19 @@ $arrowBorderRadius: 5px;
 
 .box {
     position: absolute;
-    height: 100px;
+    height: $footer_header_height;
     background: $gray_color;
     border-radius: 0px 0px 5px 5px;
 }
 
 #headerLeftBox{
-    width: 301px;
+    // width: 301px;
+    width: 32%;
     left: 0px;
 }
 
 #headerRightBox{
-    width: 620px;
+    width: 66%;
     left: 320px;  
 }
 
@@ -143,16 +144,16 @@ $arrowBorderRadius: 5px;
 
 .rightText{
     position: absolute;
-    width: 301px;
-    height: 296px;
+    width: $textBoxWidth;
+    height: $textBoxHeight;
     right: 0px;
     top: 160px;
 }
 
 .textTitle {
     position: absolute;
-    width: $textBoxWidth;
-    height: $textBoxHeight;
+    width: 99%;
+    height: 40%;
     left: 0px;
     top: 0px;
     font-family: $text_font;
@@ -172,7 +173,7 @@ $arrowBorderRadius: 5px;
 .textLines {
     position: absolute;
     width: $textBoxWidth;
-    height: 156px;
+    height: 53%;
     left: 0px;
     top: 140px;
     font-family: $text_font;
@@ -219,9 +220,15 @@ $arrowBorderRadius: 5px;
     &:hover .combinedShapeLeftArrow,
     &:hover .combinedShapeRightArrow {
         z-index: 3;
-        content: url('assets/arrow-blue-left.png');
-        content: url('assets/arrow-blue-right.png');
     }
+}
+
+.leftArrow:hover .combinedShapeLeftArrow{
+    content: url('../assets/arrow-blue-left.png');
+}
+
+.rightArrow:hover .combinedShapeRightArrow{
+    content: url('../assets/arrow-blue-right.png');
 }
 
 .rectangleLeftArrow, .rectangleRightArrow {
