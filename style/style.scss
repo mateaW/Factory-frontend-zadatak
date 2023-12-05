@@ -1,7 +1,247 @@
+$gray_color: #DDDDDD;
+$blue_color: #134880;
+
 $container_width: 940px;
 $footer_header_height: 100px;
-$primary_color: #DDDDDD;
-$primary_color_2: #134880;
-$right_text_font: 'SourceSansPro';
+
+$textBoxWidth: 300.93px;
+$textBoxHeight: 120px;
+$text_font: 'SourceSansPro';
+
 $image_height: 200px;
+
 $arrow_width_height: 60px;
+$arrowBorderRadius: 5px;
+
+.slider {
+    position: relative;
+    width: 1920px;
+    height: 730px;
+}
+
+.container {
+    position: absolute;
+    width: $container_width;
+    height: 730px;
+    left: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    position: absolute;
+    width: $container_width;
+    height: $footer_header_height;
+    top: 0px;
+    left: 0px;
+}
+
+.box {
+    position: absolute;
+    height: 100px;
+    background: $gray_color;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#headerLeftBox{
+    width: 301px;
+    left: 0px;
+}
+
+#headerRightBox{
+    width: 620px;
+    left: 320px;  
+}
+
+.footer{
+    position: absolute;
+    width: $container_width;
+    height: $footer_header_height;
+    bottom: 0px;
+}
+
+#footerBox{
+    width: $container_width;
+    height: $footer_header_height;
+    left: 0px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.topRowContainer{
+    position: absolute;
+    overflow: hidden;
+    width: 1040px;
+    height: $image_height;
+    left: -420px;
+    top: 160px;
+}
+
+.bottomRowContainer{
+    position: absolute;
+    overflow: hidden;
+    width: 850px;
+    height: $image_height;
+    left: -390px;
+    bottom: 160px;
+}
+
+.topRow, .bottomRow{
+    position: absolute;
+    height: $image_height;
+}
+
+.imageBottom, .imageTop{
+    position: absolute;
+    height: $image_height;
+    border-radius: 5px;
+}
+
+#imTopRow1{
+    width: 220px;
+    left: 1px; 
+}
+
+#imTopRow2{
+    width: 120px;
+    left: 230px;
+}
+
+#imTopRow3{
+    width: 220px;
+    left: 360px;
+}
+
+#imTopRow4{
+    width: 180px;
+    left: 590px;
+}
+
+#imTopRow5{
+    width: 260px;
+    left: 780px;
+}
+
+#imBottomRow1{
+    width: 260px;
+    left: 0px;
+}
+
+#imBottomRow2{
+    width: 260px;
+    left: 270px;
+}
+
+#imBottomRow3{
+    width: 120px;
+    left: 540px;
+}
+
+#imBottomRow4{
+    width: 180px;
+    left: 670px;
+}
+
+.rightText{
+    position: absolute;
+    width: 301px;
+    height: 296px;
+    right: 0px;
+    top: 160px;
+}
+
+.textTitle {
+    position: absolute;
+    width: $textBoxWidth;
+    height: $textBoxHeight;
+    left: 0px;
+    top: 0px;
+    font-family: $text_font;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.2px;
+    color: $blue_color;
+}
+
+.textTitle p{
+    position: absolute;
+    top: -30px;
+}
+
+.textLines {
+    position: absolute;
+    width: $textBoxWidth;
+    height: 156px;
+    left: 0px;
+    top: 140px;
+    font-family: $text_font;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.2px;
+    color: rgba(72, 74, 76, 1);
+    opacity: 0.7;
+}
+
+.arrows {
+    position: absolute;
+    width: $arrow_width_height;
+    height: 130px;
+    right: 319.5px;
+    bottom: 230px;
+}
+
+.arrows {
+    z-index: 1;
+}
+
+.leftArrow{
+    top: 0px;
+}
+
+.rightArrow{
+    top: 70px;
+}
+
+.leftArrow, .rightArrow {
+    position: absolute;
+    width: $arrow_width_height;
+    height: $arrow_width_height;
+    left: 0px;
+    &:hover .rectangleLeftArrow,
+    &:hover .rectangleRightArrow {
+        z-index: 2;
+        border: 1px solid $blue_color;
+    }
+
+    &:hover .combinedShapeLeftArrow,
+    &:hover .combinedShapeRightArrow {
+        z-index: 3;
+        content: url('assets/arrow-blue-left.png');
+        content: url('assets/arrow-blue-right.png');
+    }
+}
+
+.rectangleLeftArrow, .rectangleRightArrow {
+    box-sizing: border-box;
+    position: absolute;
+    width: $arrow_width_height;
+    height: $arrow_width_height;
+    left: 0px;
+    top: 0px;
+    border: 1px solid $gray_color;
+    border-radius: $arrowBorderRadius;
+    transition: border 0.3s ease;
+    background-color: white;
+}
+
+.combinedShapeLeftArrow, .combinedShapeRightArrow {
+    position: absolute;
+    width: 9.98px;
+    height: 16px;
+    left: 25px;
+    top: 22px;
+    transition: 0.3s ease;
+}
