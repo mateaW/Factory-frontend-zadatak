@@ -1,4 +1,4 @@
-$(function(){
+$(() => {
     const topSlider = $('.topRow');
     const bottomSlider = $('.bottomRow');
 
@@ -14,7 +14,7 @@ $(function(){
     topTranslationX = 0;
     bottomTranslationX = 0;
 
-    $('.rectangleRightArrow').click(function(){
+    $('.rectangleRightArrow').click(() => {
         const topLastImage = topImages[topImages.length-1];
         const bottomLastImage = bottomImages[bottomImages.length-1];
         const topLastImageWidth = topLastImage.offsetWidth + 10;
@@ -49,7 +49,7 @@ $(function(){
         bottomMoveCloneToRight -= bottomLastImageWidth;
     });
 
-    $('.rectangleLeftArrow').click(function(){
+    $('.rectangleLeftArrow').click(() => {
         const topFirstImage = topImages[0];
         const bottomFirstImage = bottomImages[0];
         const topFirstImageWidth = topFirstImage.offsetWidth + 10;
