@@ -11,8 +11,8 @@ $(() => {
     let topMoveCloneToRight = 1050;
     let bottomMoveCloneToRight = 860;
 
-    topTranslationX = 0;
-    bottomTranslationX = 0;
+    let topTranslationX = 0;
+    let bottomTranslationX = 0;
 
     $('.rectangleRightArrow').click(() => {
         const topLastImage = topImages[topImages.length-1];

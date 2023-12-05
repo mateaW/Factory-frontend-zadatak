@@ -9,8 +9,8 @@ $(function () {
   var bottomMoveCloneToLeft = 0;
   var topMoveCloneToRight = 1050;
   var bottomMoveCloneToRight = 860;
-  topTranslationX = 0;
-  bottomTranslationX = 0;
+  var topTranslationX = 0;
+  var bottomTranslationX = 0;
   $('.rectangleRightArrow').click(function () {
     var topLastImage = topImages[topImages.length - 1];
     var bottomLastImage = bottomImages[bottomImages.length - 1];
